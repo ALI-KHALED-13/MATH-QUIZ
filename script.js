@@ -36,7 +36,7 @@ function evaluate() {
     Array.from(divs).forEach(div=> {
         div.addEventListener('click', select_deselect);
         div.onmousedown =()=> false;
-        If(div.firstElementChild) div.firstElementChild.onmousedown =()=> false;
+        /*If(div.firstElementChild) div.firstElementChild.onmousedown =()=> false;*/
     });
 
     let selectedEls =  document.getElementsByClassName('selected');
