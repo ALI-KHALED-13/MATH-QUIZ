@@ -43,7 +43,7 @@ aside {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(204, 237, 173);
+    background-color: rgb(230, 255, 165);
     padding: 1vw;
 }
 .op {
@@ -92,7 +92,7 @@ aside {
 #hidden {
     display:none;
     grid-column: 1 / 3;
-    background-color: rgb(204, 237, 173);
+    background-color: rgb(230, 255, 165);
     padding: 1vh;
     color: rgb(48, 112, 48);
     font-size: 2.8rem;
