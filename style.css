@@ -80,13 +80,13 @@ aside {
     padding: 5px;
     background-color: rgb(219, 245, 219);
     color: rgb(150, 74, 221);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 #note > span {
     float: right;
     padding-right: 3px;
     color: rgb(190, 70, 22);;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 #hidden {
