@@ -90,7 +90,7 @@ function next () {
     function update(){
         if (levels[num]){
         document.getElementsByTagName('main')[0].innerText = 
-            `choose the correct pair || Level ${num+1}`;
+            `choose the mathmatically equivalent pair || Level ${num+1}`;
         } else {document.getElementsByTagName('main')[0].innerText = 'You Have Done It!!!!';}
         document.getElementsByTagName('aside')[0].removeEventListener('click', update);
         document.getElementsByTagName('aside')[0].onclick =()=> alert('you have to solve every Question before jumbing to next level');
