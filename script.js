@@ -7,7 +7,7 @@ const levels = [
     'log100 + 16<sup>0.5</sup>':'6',
      '0.25 - 0.2 X 5<sup>0</sup>':'0.05',
      '5 ÷ 3<sup>log1</sup>':'5',
-     '4 - 5<sup>2</sup>':'29'
+     '4 - 5<sup>2</sup>':'-21'
     },
 ]
 let num = 0; 
