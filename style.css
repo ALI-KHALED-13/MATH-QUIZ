@@ -10,7 +10,10 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 10fr;
     grid-template-columns: 7fr 3fr;
-    height: 100vh;
+    min-height: 100vh;
+    max-width: 140rem;
+    margin: 0 auto;
+    background-color: rgb(231, 240, 211);
 }
 header {
   grid-column: 1 / 3;
@@ -28,14 +31,23 @@ main {
     color: white;
     padding: 1vw;
     line-height: 200%;
+    font-size: 1.8rem;
+    display: grid;
+    place-items: center;
 }
 aside {
     grid-column: 2 / 3;
     background-color: rgb(71, 32, 78);
     color: white;
+    display: grid;
+    place-items: center;
     padding: 1vw;
     line-height: 200%;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+aside:hover {
+    background-color: rgb(163, 59, 111);
 }
 #container {
     grid-column: 1 / 3;
@@ -55,12 +67,11 @@ aside {
    border: 2px solid rgb(75, 36, 36);
    border-radius: 5px;
    cursor: pointer;
-   transition: background 0.5s, border 0.5s;
+   transition: background-color 0.5s, border 0.5s;
 }
 .selected {
    background-color: rgb(150, 202, 219) ;
    border: solid 2px rgba(15, 51, 253, 0.267) ;
-   transition: background 0.5s, border 0.5s, transform 0.5;
 }
 .correct {
    background-color: rgba(78, 243, 142, 0.87) ;
@@ -76,17 +87,17 @@ aside {
     width: 90%;
     position: fixed;
     top: 0px;
-    left: 5%;
+    right: 5%;
     text-align: center;
-    padding: 5px;
+    padding: 1rem 0.5rem;
     background-color: rgb(219, 245, 219);
     color: rgb(150, 74, 221);
-    font-size: 1.3rem;
+    font-size: 1.35rem;
 }
 #note > span {
     float: right;
-    padding-right: 3px;
-    color: rgb(190, 70, 22);;
+    padding-right: 0.3rem;
+    color: rgb(190, 70, 22);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -100,4 +111,17 @@ aside {
     padding-top: 2vh;
     word-break: break; 
     word-wrap: wrap;
+}
+
+
+@media screen and (min-width: 760px) {
+    #note {
+        font-size: large;
+        width: 50%;
+        right: 2rem;
+    }
+    #note > span {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
 }

@@ -9,49 +9,17 @@
 </head>
 <body>
     <header>The Ultimate Math Quiz</header>
-    <div id='note'> this quiz is to be solved without calculator help <span onclick="this.parentNode.remove()">X</span></div>
-    <main>choose the mathmatically Equvalent pair || Level 1</main>
+    <div id='note'> this quiz is to be solved without calculator help <span onclick="this.parentElement.remove()">X</span></div>
+    <main>choose the correct pair || Level 1</main>
     <aside onclick="alert('you have to solve every Question before jumbing to next level')">Next Level</aside>
     <div id='container'>
     </div>
     <div id='hidden'> 
         <b><p>Congrats you have finished the quiz!!! </p>
-        <img src='tenor.gif' alt='happy dancing' style='display:block; width:35%; height:30%; margin:auto;'>
-        <p>if you managed to solve every question without any mistake <wbr>you can consider yourself as a friend of mine 😁. 
-        ALL HAILS Math-Matics!!!!!.. ok that was a bit too much 😝</p></b>
-        <!--<p>if you like, you can add a question to this quiz! fill out the form and send it to me via Email.
-            I will check it out!
-        </p>
-        <form action="mailto:alialtwaff@gmail.com" method='GET' enctype="text/plain">
-            <table style='border:none;'>
-                <tr>
-                    <td>
-                    <label for='name'>Your Name</label>
-                    <input type='text' id='name' name='name' maxlength="20"> 
-                   </td>
-                   <td>
-                    <label for='email'>  Your Email</label> 
-                    <input type='email' id='email' name='email'>
-                  </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for='level'>Level of difficulty</label> <input id='level' name='level' list='levels'>
-                    <datalist id='levels'>
-                        <option>Easy</option>
-                        <option>Medium</option>
-                        <option>Hard</option>
-                        <option>Extremly hard</option>
-                    </datalist>
-                </td>
-               </tr>
-               <tr>
-                <td><label for='q'>The Question: </label> <input type='text' width="60%" id='q' name='q'></td>
-                   <td><label for='a'>The Answer: </label> <input type='text' width="25%" id='a' name='q'></td> 
-               </tr>
-               <tr><td><input type="submit" value="Send" onclick='receive()'></td> </tr>
-            </table>
-        </form>-->
+        <img src='tenor.gif' alt='happy dancing' style='display:block; width:35%; margin:auto;'>
+        <p>if you managed to solve every question without any mistakes <wbr>you can consider yourself as a friend of mine 😁. 
+        ALL HAILS Mathematics!!!!!</p></b>
+        
         <br><br>
         <audio id='correct' hidden>
             <source src='audio/correct.mp3' type="audio/mpeg"\>
